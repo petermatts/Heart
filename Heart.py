@@ -4,8 +4,11 @@ import math
 RAD2DEGREE = math.pi/180
 
 # makes heart with two full semi-circles at top
-def draw1(angle = 50, length = 200):
+def draw1(angle: float = 50, length: float = 200, Title: str = "Love") -> None:
+    assert angle > 0 and angle < 90
+   
     color('red')
+    title(Title)
     begin_fill()
 
     # calc variables
@@ -27,9 +30,11 @@ def draw1(angle = 50, length = 200):
 
 # makes a heart with two semicircles at the top where the angle at the point where
 # the semi-circles meet is inpointangle
-def draw2(angle = 50, inpointangle = 90, length = 200):
+def draw2(angle: float = 50, inpointangle: float = 90, length: float = 200, Title: str = "Love") -> None:
+    assert angle > 0 and angle < 90
+    
     color('red')
-    title('Love')
+    title(Title)
     begin_fill()
 
     # calc variables
@@ -58,5 +63,5 @@ def draw2(angle = 50, inpointangle = 90, length = 200):
 
 
 if __name__ == '__main__':
-    # draw1(50, 200)
-    draw2(50, 70, 400)
+    # draw1(angle=50, length=200)
+    draw2(angle=50, inpointangle=70, length=400)
