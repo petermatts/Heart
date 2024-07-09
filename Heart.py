@@ -5,7 +5,7 @@ RAD2DEGREE = math.pi/180
 
 # makes heart with two full semi-circles at top
 def draw1(angle: float = 50, length: float = 200, Title: str = "Love") -> None:
-    assert angle > 0 and angle < 90
+    assert angle > 0 and angle <= 90
    
     color('red')
     title(Title)
@@ -31,7 +31,7 @@ def draw1(angle: float = 50, length: float = 200, Title: str = "Love") -> None:
 # makes a heart with two semicircles at the top where the angle at the point where
 # the semi-circles meet is inpointangle
 def draw2(angle: float = 50, inpointangle: float = 90, length: float = 200, Title: str = "Love") -> None:
-    assert angle > 0 and angle < 90
+    assert angle > 0 and angle <= 90
     
     color('red')
     title(Title)
